@@ -1,0 +1,161 @@
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+.center{
+    text-align: center;
+    margin-top: 1em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bolder;
+}
+
+.left{
+    background-color: white;
+    padding: 2em;
+    font-family: 'Open Sans', sans-serif;
+}
+.right{
+    background-color: white;
+    border-left: 1px solid rgb(209, 209, 209);
+    padding: 2em;
+    font-family: 'Open Sans', sans-serif;
+    width: 50%;
+}
+
+.login{
+    display:table;
+    width:100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://cdn.pixabay.com/photo/2015/10/31/08/50/coins-1015125_960_720.jpg');
+    background-position:center top;
+    height:350px;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+span{
+    color: red;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: rgb(72,79,103);
+}
+
+.content{
+    display: flex;
+    padding:3em;
+    justify-content: center;
+}
+
+.project{
+    border: 1px solid black;
+    height: fit-content;
+    width: fit-content;
+    box-shadow: 4px 4px 5px black;
+    margin:.5em;
+    background-color: rgb(34,34,44);
+    padding: 3em;
+}
+
+
+.btn{
+    margin-top: 1em;
+}
+
+.white{
+    color: white;
+}
+
+.grey{
+    color: rgb(158, 158, 158);
+}
+
+.right h1{
+    text-align: center;
+}
+
+.right a{
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+.main{
+    background-color: rgb(72,79,103);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.margin{
+    display: block;
+    margin-left: 5em;
+}
+
+.create{
+    height: 40%;
+    width:30%;
+    padding: 30px;
+    background-color:rgb(34,34,44);
+    margin-top: 10px;
+}
+
+.new_project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top_new{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+.top_new h1{
+    margin-right: 2em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.project h6{
+    color: rgb(189, 189, 189);
+}
+
+.view{
+    display: flex;
+    justify-content: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.project h3{
+    color: white;
+}
+
+.btn-danger{
+    background-color: rgb(1,214,192) !important;
+}
+
+.view h3{
+    color: white;
+}
+
+.view a{
+    text-decoration: none;
+    color: rgb(1,214,192);
+}
+
+.view td{
+    padding:10px;
+}
+
+.view th{
+    padding: 20px;
+}

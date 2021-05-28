@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <title>Dashboard</title>
+</head>
+
+<body class="main">
+    <div class="top_new">
+        <h1 class="center">Transactions</h1>
+        <a class="btn btn-danger" href="/dashboard">Home</a>
+    </div>
+    <div class="new_project">
+        <div class="create">
+            <form action="/add" method='post'>
+                <select name="project_id" class="custom-select mt-2" id="inputGroupSelect02">
+                    {%for project in projects%}
+                    {%if project.user_id == logged_in_user.id%}
+                    <option value="{{project['id']}}">{{project['name']}}</option>
+                    {%endif%}
+                    {%endfor%}
+                </select>
+                <select name="catagory" class="custom-select mt-2" id="inputGroupSelect02">
+                    <option value="Rent">Rent</option>
+                    <option value="Utilities">Utilities</option>
+                    <option value="Equipment">Equipment</option>
+                    <option value="Supplies">Supplies</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Labor">Labor</option>
+                    <option value="Food/Bev">Food/Bev</option>
+                    <option value="Gas">Gas</option>
+                </select>
+                <input class="form-control mt-2" type="text" name="name" placeholder="Item">
+                <input class="form-control mt-2" type="text" name="amount" placeholder="Amount">
+                <button class="btn btn-danger">Add</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
